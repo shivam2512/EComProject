@@ -4,6 +4,7 @@ import MainHeader from './components/MainHeader';
 import Welcome from './pages/Welcome';
 import Products from './pages/Products';
 import ContactUs from './pages/ContactUs';
+import ProductPage from './pages/ProductPage'; // Import the new component
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
             </Route>
             <Route path="/contactus">
               <ContactUs />
+            </Route>
+            {/* Add a route for the ProductPage component */}
+            <Route path="/product/:productId">
+              <ProductPage />
             </Route>
           </Switch>
         </main>
